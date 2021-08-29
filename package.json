@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
+    "dev": "concurrently \"npx nodemon app.js\" \"cd client && npm start\""
+   
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "concurrently": "^6.2.1",
     "nodemon": "^2.0.12"
   }
 }
